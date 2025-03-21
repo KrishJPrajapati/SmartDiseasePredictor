@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import { Box, Grid, FormControlLabel, Checkbox, Button, Typography } from "@mui/material";
+import DepressionPredictionCard from "./DepressionPredictionCard";
 
 const initialSymptoms = [
   "Head Ache", "Cough", "Eaching", "Fatigue", "Skin Rash", "Anxiety"
@@ -36,9 +37,9 @@ const SymptomsForm = () => {
     <Box
       sx={{
         backgroundColor: "#5DADE2",
-        padding: "24px 40px", // Increased left & right padding
+        padding: "24px 80px", // Increased left & right padding
         borderRadius: 2,
-        width: "50%",
+        width: "60%",
         margin: "auto",
         textAlign: "center",
       }}
@@ -65,7 +66,7 @@ const SymptomsForm = () => {
         ))}
       </Grid>
 
-      <Box sx={{ borderTop: "2px solid red", marginTop: 2, paddingTop: 1 }}>
+      <Box sx={{ borderTop: "3px solid red", marginTop: 2, paddingTop: 1 , paddingBottom: 5 }}>
         {!showMore && (
           <Button
             variant="text"
@@ -76,6 +77,8 @@ const SymptomsForm = () => {
           </Button>
         )}
       </Box>
+
+      <DepressionPredictionCard/>
     </Box>
   );
 };
