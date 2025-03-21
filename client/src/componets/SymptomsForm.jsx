@@ -42,6 +42,9 @@ const SymptomsForm = () => {
         width: "60%",
         margin: "auto",
         textAlign: "center",
+        borderRadius:"3%",
+        border:'12px solid #C0E4FA',
+        marginTop:'5%',
       }}
     >
       <Typography variant="h6" gutterBottom sx={{ fontWeight: "bold" }}>
