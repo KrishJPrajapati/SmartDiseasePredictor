@@ -1,6 +1,6 @@
 const userModel = require('../models/userModel')
 const { model } = require('mongoose')
-
+const bcryptjs = require('bcryptjs')
 async function register(req, res) {
     try {
         const { name, email, password } = req.body
@@ -14,10 +14,12 @@ async function register(req, res) {
                 error: true,
             })
         }
+        const salt = await bcryptjs.genSalt(10)
+        const hashedpassword = await bcryptjs.hash(password, salt)
         const payload = {
             name,
             email,
-            password
+            password: hashedpassword
         }
         const user = new userModel(payload)
         const userSave = await user.save()
