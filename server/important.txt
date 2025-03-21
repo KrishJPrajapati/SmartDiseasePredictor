@@ -1,0 +1,8 @@
+To use serverSide 
+Install all required packages
+create one env file.
+create one mongoDb cloud cluster and use that uri in the MONGODB_URI variable in env file.
+please check all the necessary env variables before running.
+
+Note: There might be some error or typo due to me being coding without running any single route in postman due to lack of time.
+happy coding good night : 23:42
