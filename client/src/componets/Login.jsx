@@ -1,6 +1,7 @@
 import React from "react";
 import { TextField, Button, Link, Box, Typography, Container } from "@mui/material";
 import logo from "../images/logo.png"
+import cloud from "../images/cloud.jpg"
 
 const Login = () => {
   return (
@@ -11,7 +12,7 @@ const Login = () => {
         justifyContent: "center",
         alignItems: "center",
         backgroundImage:
-          "url('https://wallpapers.com/images/hd/cloudy-background-7zt29kx0fcwmprw0.jpg')",
+          `url(${cloud})`,
         backgroundSize: "cover",
         backgroundPosition: "center",
         position: "relative",
