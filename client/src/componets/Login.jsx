@@ -118,7 +118,7 @@ const Login = () => {
 
       {/* Skip Login Button (Bottom Center) */}
       <Box sx={{ position: "absolute", bottom: 20, left: "50%", transform: "translateX(-50%)", zIndex: 2 }}>
-        <Link href="#" variant="body2" sx={{ color: "black", fontWeight: "bold", fontSize: "16px" }}>
+        <Link href="home" variant="body2" sx={{ color: "black", fontWeight: "bold", fontSize: "16px" }}>
           Skip Login
         </Link>
       </Box>
