@@ -4,7 +4,7 @@ import logo from "../images/logo.png";
 
 const Navbar = () => {
   return (
-    <AppBar position="static" sx={{ backgroundColor: "white", boxShadow: "none", borderBottom: "2px solid blue" }}>
+    <AppBar position="static" sx={{ backgroundColor: "white", boxShadow: "none"}}>
       <Toolbar sx={{ display: "flex", justifyContent: "space-between", alignItems: "center", px: 2 }}>
         {/* Left: Heart Logo */}
         <Box>
@@ -13,9 +13,9 @@ const Navbar = () => {
 
         {/* Right: Navigation Links */}
         <Box sx={{ display: "flex", gap: 3 }}>
-          <Link href="#" sx={{ textDecoration: "none", color: "black", fontWeight: "bold" }}>HOME</Link>
-          <Link href="#" sx={{ textDecoration: "none", color: "black", fontWeight: "bold" }}>NEWS</Link>
-          <Link href="#" sx={{ textDecoration: "none", color: "black", fontWeight: "bold" }}>HELP</Link>
+          <Link href="#" sx={{ textDecoration: "none", color: "blue", fontWeight: "bold" }}>HOME</Link>
+          <Link href="#" sx={{ textDecoration: "none", color: "blue", fontWeight: "bold" }}>NEWS</Link>
+          <Link href="#" sx={{ textDecoration: "none", color: "blue", fontWeight: "bold" }}>HELP</Link>
         </Box>
       </Toolbar>
     </AppBar>

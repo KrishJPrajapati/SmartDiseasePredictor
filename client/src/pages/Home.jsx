@@ -5,7 +5,7 @@ import SymptomsForm from '../componets/SymptomsForm';
 
 const Home = () => {
   return (
-    <Box sx={{bgcolor:'#2E86C1'}}> 
+    <Box sx={{bgcolor:'#2E86C1',height:'100%', paddingBottom: '50px'}}> 
       <Navbar></Navbar>
       <SymptomsForm></SymptomsForm>
     </Box>
