@@ -39,7 +39,7 @@ const SymptomsForm = () => {
         backgroundColor: "#5DADE2",
         padding: "24px 80px", // Increased left & right padding
         borderRadius: 2,
-        width: "60%",
+        width: {md:'60%',xs:'auto'},
         margin: "auto",
         textAlign: "center",
         borderRadius:"3%",
