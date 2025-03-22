@@ -13,5 +13,5 @@ async function connectDb() {
         console.log(error)
     }
 }
-module.exports = connectDB
+
 module.exports = connectDb
